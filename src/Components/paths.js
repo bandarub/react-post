@@ -14,7 +14,7 @@ const Path = (props)=>{
     return(<div>        
          <Router>            
             <div>            
-            <Route exact  path ="/" render={()=>(<DefaultPage/>)}/>   
+            <Route exact  path ="/" component={DefaultPage}/>   
             <Route exact  path ="/posts/newpost" render={()=>(<Newpost  save={props.save} 
                                                                         title={props.title}
                                                                         category={props.category}
