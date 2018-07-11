@@ -1,6 +1,7 @@
 import React from 'react';
 import {
     BrowserRouter as Router,
+    HashRouter,
     NavLink,  Route,
   }from 'react-router-dom';
 
@@ -12,7 +13,7 @@ const Link=(props)=>{
      
    return(
 <div>
-   <Router>
+   <HashRouter>
        <div className='addpost'>       
        {/* <NavLink exact activeStyle ={{color:'orange'}} to="/" >Home</NavLink> */}
        {/* <NavLink exact activeStyle ={{color:'orange'}} to="/posts" >Posts</NavLink> */}
@@ -34,7 +35,7 @@ const Link=(props)=>{
                                                                 delete={props.delete}/>}/>
 
        </div>
-   </Router>
+   </HashRouter>
 
 
 </div>

@@ -83,7 +83,6 @@ class App extends Component {
      
     return (
       <div className="App">
-      <h1>Welcome to posts</h1>
        <Link  addPost = {this.addPost} 
               post={this.handlePost} 
               save={this.handleSave}
